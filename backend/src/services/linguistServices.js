@@ -1,38 +1,24 @@
 
-const getWords = () => {
+
+const users = () => {
+
+}
+const getUser = () => {
+
+} 
+const getAllContent = () => {
+
+}
+const getUserContent = () => {
 
 }
 
-const getPhrases = () => {
 
-}
-
-const getSentences = () => {
-
-}
-
-const testWords = () => {
-
-}
-
-const testPhrases = () => {
-
-}
-
-const testSentences = () => {
-
-}
-
-const getProgress = () => {
-
-}
 
 module.exports = {
-    getWords,
-    getPhrases,
-    getSentences,
-    testWords,
-    testPhrases,
-    testSentences,
-    getProgress
+    users,
+    getUser,
+    getAllContent,
+    getUserContent
+    
 }

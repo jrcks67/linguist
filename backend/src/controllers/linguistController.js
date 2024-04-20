@@ -1,29 +1,79 @@
-const linguistService = require("../services")
+const linguistServices = require("../services/linguistServices")
 
-const getWords = (req,res) => {
-    const allWords = linguistService.getWords();
-    res.send({status:"OK",data:allWords})
-} 
-
-const getSentences = (req,res) => {
-    const allSentences = linguistService.getSentences();
-    res.send({status:"OK",data:allWords})
+const users = (req,res) => {
+    const newUser = linguistServices.users()
+    res.send({status:"OK",data:newUser})
 }
 
-const getPhrases = (req,res) => { 
-    const allPhrases = linguistService.getPhrases();
-    res.send({status:"OK",data:allPhrases})
 
+const getUser = (req,res) => {
+    const user = linguistServices.getUser()
 }
 
-const testWords = () => {
-
-}
-const testPhrases = () => {
+const getAllContent = (req,res) => {
 
 }
 
-const testSentences = () => {
+
+
+module.exports = {
+    users,
+    getUser,
+    getAllContent,
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const linguistService = require("../services")
+
+// const getWords = (req,res) => {
+//     const allWords = linguistService.getWords();
+//     res.send({status:"OK",data:allWords})
+// } 
+
+// const getSentences = (req,res) => {
+//     const allSentences = linguistService.getSentences();
+//     res.send({status:"OK",data:allWords})
+// }
+
+// const getPhrases = (req,res) => { 
+//     const allPhrases = linguistService.getPhrases();
+//     res.send({status:"OK",data:allPhrases})
+
+// }
+
+// const testWords = () => {
+
+// }
+// const testPhrases = () => {
+
+// }
+
+// const testSentences = () => {
 
     // test_id,
     // test_score,
