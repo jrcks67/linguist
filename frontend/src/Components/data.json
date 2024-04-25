@@ -1,0 +1,243 @@
+ [
+    {
+        "id":"1",
+        "title":"Arabic Language",
+        "description":"This program is designed to take you from ZERO knowledge in Arabic to MASTERING the Arabic language through our SYSTEM",
+        "level":"Beginner",
+        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "language":"Arabic",
+        "content":[
+            "Welcome and Course Introduction",
+            "Alphabets in Arabic",
+            "Sentence formation",
+            "Reading and writing",
+            "Verbs",
+            "Nouns and Pronouns",
+            "Adverbs",
+            "Prepositions",
+            "Adjectives",
+            "Essay writing",
+            "Email Writing"
+        ]
+    },
+    {
+        "id":"2",
+        "title":"Learn Advance German",
+        "description":"Learn German language with fun bite-size lessons for beginners. Start speaking German & pass the Goethe A1 German exam!",
+        "level":"Advance",
+        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "content":[
+            "Welcome and Course Introduction",
+            "Alphabets in Arabic",
+            "Sentence formation",
+            "Reading and writing",
+            "Verbs",
+            "Nouns and Pronouns",
+            "Adverbs",
+            "Prepositions",
+            "Adjectives",
+            "Essay writing",
+            "Email Writing"
+        ]
+    },
+    {
+        "id":"3",
+        "title":"The English Conversation Course",
+        "description":"An English conversation course like no other - a course designed to get you speaking in every lesson!",
+        "level":"Beginner",
+        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "content":[
+            "Welcome and Course Introduction",
+            "Alphabets in Arabic",
+            "Sentence formation",
+            "Reading and writing",
+            "Verbs",
+            "Nouns and Pronouns",
+            "Adverbs",
+            "Prepositions",
+            "Adjectives",
+            "Essay writing",
+            "Email Writing"
+        ]
+    },
+    {
+        "id":"4",
+        "title":"The English learning Course",
+        "description":"English speaking course. 77 Hours of English language speaking, English listening practice. 1000 English language words",
+        "level":"Intermediate",
+        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "content":[
+            "Welcome and Course Introduction",
+            "Alphabets in Arabic",
+            "Sentence formation",
+            "Reading and writing",
+            "Verbs",
+            "Nouns and Pronouns",
+            "Adverbs",
+            "Prepositions",
+            "Adjectives",
+            "Essay writing",
+            "Email Writing"
+        ]
+    },
+    {
+        "id":"5",
+        "title":"Learn Dutch",
+        "description":"Learn Dutch for Beginners: Fully Master the Essentials of Dutch Speaking (A1-A2) - Unique Learning Dutch Method, 14 hrs",
+        "level":"Beginner",
+        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "content":[
+            "Welcome and Course Introduction",
+            "Alphabets in Arabic",
+            "Sentence formation",
+            "Reading and writing",
+            "Verbs",
+            "Nouns and Pronouns",
+            "Adverbs",
+            "Prepositions",
+            "Adjectives",
+            "Essay writing",
+            "Email Writing"
+        ]
+    },
+    {
+        "id":"6",
+        "title":"Polish Language Course",
+        "description":"Learn Polish NATURALLY with a Native Teacher. Course - Polish For Beginners. Polish Grammar. Polish Vocabulary",
+        "level":"Beginner",
+        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "content":[
+            "Welcome and Course Introduction",
+            "Alphabets in Arabic",
+            "Sentence formation",
+            "Reading and writing",
+            "Verbs",
+            "Nouns and Pronouns",
+            "Adverbs",
+            "Prepositions",
+            "Adjectives",
+            "Essay writing",
+            "Email Writing"
+        ]
+    },
+    {
+        "id":"7",
+        "title":"Learn Hindi in 3 Weeks",
+        "description":"Complete Hindi language course with easy Grammar explanations supported with exercises, quizzes and practice material.",
+        "level":"Beginner",
+        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "content":[
+            "Welcome and Course Introduction",
+            "Alphabets in Arabic",
+            "Sentence formation",
+            "Reading and writing",
+            "Verbs",
+            "Nouns and Pronouns",
+            "Adverbs",
+            "Prepositions",
+            "Adjectives",
+            "Essay writing",
+            "Email Writing"
+        ]
+    },
+    {
+        "id":"8",
+        "title":"Complete Italian course",
+        "description":"Learn Italian from levels A1 to B2.Master the Italian language in a fun & easy way in 3 months or less even if you don't have much free time to study!!!",
+        "level":"Beginner",
+        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "content":[
+            "Welcome and Course Introduction",
+            "Alphabets in Arabic",
+            "Sentence formation",
+            "Reading and writing",
+            "Verbs",
+            "Nouns and Pronouns",
+            "Adverbs",
+            "Prepositions",
+            "Adjectives",
+            "Essay writing",
+            "Email Writing"
+        ]
+    },
+    {
+        "id":"9",
+        "title":"Spanish - Course",
+        "description":"Build on from the Spanish skills you learnt in Course 1 and learn how to communicate in even more situations",
+        "level":"Beginner",
+        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "content":[
+            "Welcome and Course Introduction",
+            "Alphabets in Arabic",
+            "Sentence formation",
+            "Reading and writing",
+            "Verbs",
+            "Nouns and Pronouns",
+            "Adverbs",
+            "Prepositions",
+            "Adjectives",
+            "Essay writing",
+            "Email Writing"
+        ]
+    },
+    {
+        "id":"10",
+        "title":"Complete Spanish Language Course",
+        "description":"Learn Spanish comprehensively with our immersive A1 CEFR-aligned course. Master Spanish in 2024.",
+        "level":"Beginner",
+        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "content":[
+            "Welcome and Course Introduction",
+            "Alphabets in Arabic",
+            "Sentence formation",
+            "Reading and writing",
+            "Verbs",
+            "Nouns and Pronouns",
+            "Adverbs",
+            "Prepositions",
+            "Adjectives",
+            "Essay writing",
+            "Email Writing"
+        ]
+    },
+    {
+        "id":"11",
+        "title":"Online Japanese N5 Course",
+        "description":"Master the basics of writing and pronunciation of Japanese vocabulary with 15 lessons",
+        "level":"Beginner",
+        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "content":[
+            "Welcome and Course Introduction",
+            "Alphabets in Arabic",
+            "Sentence formation",
+            "Reading and writing",
+            "Verbs",
+            "Nouns and Pronouns",
+            "Adverbs",
+            "Prepositions",
+            "Adjectives",
+            "Essay writing",
+            "Email Writing"
+        ]
+    },
+    {
+        "id":"12",
+        "title":"The English Master Course",
+        "description":"A Complete English Language Course: English Grammar, Speaking, Pronunciation, and Writing. British and American English.",
+        "level":"Advance",
+        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "content":[
+            "Welcome and Course Introduction",
+            "Alphabets in Arabic",
+            "Sentence formation",
+            "Reading and writing",
+            "Verbs",
+            "Nouns and Pronouns",
+            "Adverbs",
+            "Prepositions",
+            "Adjectives",
+            "Essay writing",
+            "Email Writing"
+        ]
+    }
+]

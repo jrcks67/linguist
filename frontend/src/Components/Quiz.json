@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "question": "What is the correct translation for 'telephone'",
+      "options": [
+        "ماء",
+        "دراجة",
+        "هاتف",
+        "شمسية"
+      ],
+      "answer": "شمسية",
+      "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+    },
+    {
+      "id": 2,
+      "question": "How do you say 'Good morning'?",
+      "options": [
+        "مع السلامة.",
+        "صباح الخير.",
+        "مساء الخير.",
+        "! نهارك سعيد"
+      ],
+      "answer":  "صباح الخير.",
+      "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+    },
+    {
+      "id": 3,
+      "question":"What is the correct translation for 'Please'",
+      "options": [
+        "أهلا.",
+        "مع السلامة.",
+        "من فضلك.",
+        "يسار"
+      ],
+      "answer": "من فضلك.",
+      "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+    },
+    {
+      "id": 4,
+      "question": "How do you say 'Thank You'?",
+      "options": [
+        "شكرا.",
+        "آسف",
+        "يمين",
+        "مع السلامة."
+      ],
+      "answer":  "آسف",
+      "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+    },
+    {
+      "id": 5,
+      "question": "How do you say 'water'",
+      "options": [
+        "ماء",
+        "طبق",
+        "ماء",
+        "حليب"
+      ],
+      "answer":  "طبق",
+      "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+    },
+    {
+      "id": 6,
+      "question": "What is the correct translation for 'hospital'",
+      "options": [
+        "ماء",
+        "مستشفى",
+        "أسبرين",
+        "البيت"
+      ],
+      "answer":  "أسبرين",
+      "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+    }
+  ]

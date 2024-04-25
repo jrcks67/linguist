@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../../containers/NavBar'
+import Card from "../../containers/Card"
 
 const DashboardLearn = () => {
   return (
