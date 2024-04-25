@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import imagePath from "../assets/images/Arabic/arabic.jpeg";
 
 const Card = ({ coursedetails }) => {
+  console.log(coursedetails)
   return (
-    <div className='flex flex-col items-center space-evenly justify-between bg-white border-2 border-lightText md:border md:w-full p-12 cursor-pointer:rounded-lg hover:shadow-[rgba(0,_0,_0,_0.23)_0px_3px_8px] transition-all'
-         style={{ width: '400px', height: '400px' }}> {/* Fixed width and height */}
+    <div className='flex flex-col items-center space-evenly justify-between bg-white border-2 border-lightText md:border md:w-full p-12 cursor-pointer:rounded-lg hover:shadow-[rgba(0,_0,_0,_0.23)_0px_3px_8px] transition-all bg-fixed'
+         style={{ width: '400px', height: '400px' ,backgroundImage:'../assets/images/Arabic/arabic.jpeg'}}> {/* Fixed width and height */}
       <div className='w-full h-32'> {/* Set a fixed height for the image container */}
-        <img src={coursedetails.img} alt="" className='h-full w-full object-cover'/> {/* Use object-cover to ensure the image fills the container */}
+        <img src={coursedetails.imgUrl} alt="" className='h-full w-full object-cover'/> {/* Use object-cover to ensure the image fills the container */}
       </div>
       <div id="course_content"> 
         <h3 className='font-semibold text-lg text-center my-5'>{coursedetails.title}</h3> 
@@ -18,7 +20,7 @@ const Card = ({ coursedetails }) => {
       {/* <button className='border border-black font-bold text-sm p-2 mt-4 mb-8 rounded-lg bg-yellow-500 text-white hover:bg-yellow-300'>
         Read More
       </button> */}
-      <button className='bg-yellow-400 px-8 py-3 rounded-xl font-semibold hover:bg-black hover:text-white'>
+      <button className='bg-yellowColor text-white px-8 py-3 rounded-xl font-semibold hover:bg-black'>
         <Link to={`/learn/${coursedetails.id}`}>
           Read More
         </Link>

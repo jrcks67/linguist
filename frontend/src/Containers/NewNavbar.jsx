@@ -1,23 +1,18 @@
 import React from 'react';
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/Logo/logo.png";
 import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
 const NewNavbar = () => {
   return (
     <div>
       <header className='h-12 shadow-sm'>
-        <nav className='flex  justify-between items-center w-9/12 mx-auto'>
-            <a href='/'>
-                <img src={logo} alt="logo" className='flex items-start h-12 w-25'/>
-            </a>
+        <nav className='flex  justify-between items-center w-10/12 mx-auto'>
+          <Link to="/">
+             <img src={logo} alt="logo" className='h-12 w-50'/>
+          </Link>
             <div>
-                {/* <ul className='sm:flex items-center space-x-5 hidden'>
-                    <li><a href='/'>How it works?</a></li>
-                    <li><a href='/'>Features</a></li>
-                    <li><a href='/'>About</a></li>
-                </ul>   */}
                 <Nav/>
-                {/* <button className='font-medium px-5 py-1 border border-yellowColor rounded'>Login</button>  */}
             </div>
         </nav>
       </header>

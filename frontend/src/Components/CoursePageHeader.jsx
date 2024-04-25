@@ -1,7 +1,7 @@
 import React from 'react';
 import { BiChevronRight } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import randomImage1 from "../assets/images/about.png";
+import randomImage1 from "../assets/images/About/about.png";
 
 function CoursePageHeader({course}) {
     return (
@@ -22,7 +22,7 @@ function CoursePageHeader({course}) {
                         </div>
 					</div>
 
-					<div className='w-full md:w-2/5  '>
+					<div className='w-full md:w-2/5'>
 						<div className='flex flex-col '>
 							<div className='w-full  '>
 								<img
@@ -34,6 +34,7 @@ function CoursePageHeader({course}) {
 						</div>
 					</div>
 				</div>
+				
 		</>
 	);
 }

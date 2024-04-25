@@ -12,9 +12,9 @@ const Home = () => {
   <div className='lg:w-3/4 md:w-full px-4 mx-auto mt-20 flex flex-col md:flex-row justify-between'>
     <div className='sm:flex gap-10 justify-between items-center mt-20'>
       <div className='md:w-1/2 w-full space-y-10'>
-      <h2 className='text-5xl font-semibold leading-tight'>Learn every language here</h2>
+      <h2 className='text-5xl font-semibold leading-tight'>Fluency Made Easy: Your Language Learning Companion </h2>
       <span className='text-5xl text-red-700 font-bold'>Linguist</span>
-          <p className='py-2 mb-6 text-gray-600 pl-2 border-l-4 border-red-700 text-base'>we have got you covered . You can learn any language in the world now .Its just that easy !!!</p>
+          <p className='py-2 mb-6 text-gray-600 pl-2 border-l-4 border-red-700 text-base'>Master any language with ease, from Arabic to French and beyond, with interactive lessons, progress tracking, and quizzes – all in one app.</p>
           <div className='text-lg font-medium flex flex-col sm:flex-row gap-5 items-center ' >
             <Link to="/learn" > 
               <button className='bg-yellowColor px-6 py-2 text-white rounded'>Get Started</button>
@@ -24,7 +24,7 @@ const Home = () => {
               </Link>
           </div>
       </div>
-      <div className='md:w-1/2 w-full'>
+      <div className='w-full md:w-1/2 '>
         <CardSlider/>
       </div>
     </div>

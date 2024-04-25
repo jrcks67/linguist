@@ -1,4 +1,4 @@
-import logoImg from '../assets/images/logo.png';
+import logoImg from '../assets/images/Logo/logo.png';
 import Nav from './Nav';
 // import { Link } from 'react-router-dom';
 // import {FiMenu} from 'react-icons/fi';
