@@ -9,7 +9,11 @@ function NavLinks (){
     <NavLink to="/" className="text-black hover:text-gray-300 transition-all cursor-pointer">Home</NavLink>
     <NavLink to="/about" className="text-black hover:text-gray-300 transition-all cursor-pointer">About</NavLink>
     <NavLink to="/learn" className="text-black hover:text-gray-300 transition-all cursor-pointer">Courses</NavLink>
-    <button className='font-medium px-5 py-1 border border-yellowColor rounded'>Login</button> 
+    <button className='font-medium px-5 py-1 border border-yellowColor rounded'> 
+      <NavLink to="/login" className="text-black hover:text-gray-300 transition-all cursor-pointer">
+      Login
+      </NavLink>
+    </button> 
     </>
   )
 }

@@ -1,12 +1,14 @@
 import React from 'react';
 import Navbar from '../Containers/Navbar';
+import NewNavbar from '../Containers/NewNavbar';
 import img from "../assets/images/about.png";
 import { Link } from 'react-router-dom';
 
 function About() {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
+    <NewNavbar/>
       <div className='md:min-h-screen flex flex-col-reverse md:flex-row items-center gap-5 md:mx-32 mx-5 mt-14'>
         <div className='w-full md:w-2/4'>
           <span><img src={img} alt="img" className='opacity-75 rounded-lg'/></span>
