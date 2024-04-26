@@ -3,7 +3,7 @@ const User = require("./userSchema")
 const LearningData = require("./data.json")
 
 
-mongoose.connect("")
+mongoose.connect("mongodb://localhost27017/linguist")
 
 
 
@@ -14,6 +14,6 @@ mongoose.connect("")
 
 
 module.exports = {
-    users,
-    learningData
+    User,
+    LearningData
 }

@@ -1,8 +1,8 @@
 const linguistServices = require("../services/linguistServices")
 
 const users = (req,res) => {
-    const newUser = linguistServices.users()
-    res.send({status:"OK",data:newUser})
+ const newUser = linguistServices.users(req)
+ return newUser;
 }
 
 
@@ -94,12 +94,12 @@ module.exports = {
     // test_results, 
 
 
-}
+//}
 
 const testResult = () => {
 
-    while(test):
-        if test.answer == user
+    // while(test):
+    //     if test.answer == user
 
 }
 
@@ -111,12 +111,12 @@ const getProgress = () => {
     
 }
 
-module.exports = {
-    getWords,
-    getPhrases,
-    getSentences,
-    testWords,
-    testPhrases,
-    testSentences,
-    getProgress
-}
+// module.exports = {
+//     getWords,
+//     getPhrases,
+//     getSentences,
+//     testWords,
+//     testPhrases,
+//     testSentences,
+//     getProgress
+// }
