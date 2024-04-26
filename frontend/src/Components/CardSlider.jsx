@@ -26,7 +26,7 @@ console.log(courseData)
               <div className='bg-cover bg-center h-[150px] md:h-full rounded-xl'>
                 {/* Slide content */}
                 {/* <img src={img} className='absolute bg-cover w-full object-cover'/> */}
-                <div className='bg-white p-10 rounded-xl flex flex-col justify-center items-center border-b-[8px] border-yellowColor'>
+                <div className='bg-brightBackground p-10 rounded-xl flex flex-col justify-center items-center border-[2px] border-yellowColor'>
                   <div className='flex flex-col justify-center items-center gap-6 mt-6'>
                     <h1 className='text-2xl text-black font-bold'>{item.title}</h1>
                     <p className='text-[17px] text-center'>{item.description}</p>

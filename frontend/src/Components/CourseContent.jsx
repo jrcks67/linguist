@@ -58,11 +58,14 @@ function CourseContent({ course }) {
 
                     <div className="flex-1 flex flex-wrap justify-between w-full sm:flex-row sm:flex-nowrap">
                         <div className="flex flex-col gap-2 w-full">
-                            <Link to="/quiz" className="text-[#bb7725] font-bold">
-                                <button>
-                                Quiz
-                                </button>
-                            </Link>
+                        <Link className="text-[#bb7725] font-bold"
+                            to={{
+                                pathname:"/test",
+                                state: { quizDetails: course?.quiz}
+                            }}
+                        >
+                        Quiz
+                        </Link>
                         </div>
                         <div className="flex items-center justify-end gap-6 w-20">
                             <Link to="/start-quiz" className="text-[#bb7725] font-bold">

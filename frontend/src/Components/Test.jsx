@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import NewNavbar from "../Containers/NewNavbar"; 
 import testdata from "./Quiz.json"
 
@@ -19,7 +19,9 @@ const formatTime = (seconds) => {
 
 const Test = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [questions, setQuestions] = useState(testdata);
+  // const [questions, setQuestions] = useState(location?.state);
   const [answers, setAnswers] = useState({});
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
@@ -29,12 +31,6 @@ const Test = () => {
   const [status, setStatus] = useState("");
 
   useEffect(() => {
-    // fetch("/quiz.json")
-    //   .then((response) => response.json())
-    //   .then((data) => setQuestions(data))
-    //   .catch((error) => console.error("Error fetching quiz data:", error));
-
-    // Set up the timer interval
     const intervalId = setInterval(() => {
       setTimer((prevTimer) => {
         return prevTimer > 0 ? prevTimer - 1 : prevTimer;

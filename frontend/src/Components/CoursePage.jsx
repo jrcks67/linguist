@@ -49,9 +49,12 @@ import React, { useState } from 'react';
 import NewNavbar from '../Containers/NewNavbar';
 import CoursePageHeader from './CoursePageHeader';
 import CourseContent from './CourseContent';
+import { useLocation } from 'react-router-dom';
 
 function CoursePage() {
-        const [courseDetails, setCourseDetails]=useState({
+    const location=useLocation();
+    // const {courseDetails}=location.state;
+    const [courseDetails, setCourseDetails]=useState({
             "id":"1",
             "title":"Arabic Language",
             "description":"This program is designed to take you from ZERO knowledge in Arabic to MASTERING the Arabic language through our SYSTEM",

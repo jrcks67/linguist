@@ -1,10 +1,31 @@
-import React from 'react';
+import React ,{useState,useEffect}from 'react';
 import Navbar from '../Containers/Navbar';
 import NewNavbar from '../Containers/NewNavbar';
 import { Link } from 'react-router-dom';
 import CardSlider from './CardSlider';
+import axios from 'axios';
+import courseData from './data.json';
+import { useDispatch, useSelector } from 'react-redux';
+import { setCourseData } from '../Redux/actions/courseActions';
 
 const Home = () => {
+  const dispatch = useDispatch();
+const courseData = useSelector(state => state?.course?.courseData); 
+
+ useEffect(()=>{
+  const fetchData = async () => {
+    try{
+      const response=await axios.get('/courseData');
+      const data = response.data;
+      dispatch(setCourseData(data));
+    }catch(error){
+      console.log('error is fetching course list',error)
+    }
+  };
+  fetchData();
+  
+ },[dispatch]);
+
   return (
   <>
   {/* <Navbar/> */}
