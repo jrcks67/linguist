@@ -4,20 +4,20 @@
         "title":"Arabic Language",
         "description":"This program is designed to take you from ZERO knowledge in Arabic to MASTERING the Arabic language through our SYSTEM",
         "level":"Beginner",
-        "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+        "imgUrl":"../assets/images/English/english2.png",
         "language":"Arabic",
         "content":[
-            "Welcome and Course Introduction",
-            "Alphabets in Arabic",
-            "Sentence formation",
-            "Reading and writing",
-            "Verbs",
-            "Nouns and Pronouns",
-            "Adverbs",
-            "Prepositions",
-            "Adjectives",
-            "Essay writing",
-            "Email Writing"
+            {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
+            {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Arabic"},
+            {"contentId":"8pfQg26vfaA","contentTitle":"Sentence formation"},
+            {"contentId":"LTwCmA6AjdI","contentTitle":"Reading and writing"},
+            {"contentId":"c-7SVieC_04","contentTitle":"Nouns and Pronouns"},
+            {"contentId":"1AT7IMLcA58","contentTitle":"Prepositions"},
+            {"contentId":"8pfQg26vfaA","contentTitle":"Adjectives"},
+            {"contentId":"LTwCmA6AjdI","contentTitle":"Essay writing"},
+            {"contentId":"c-7SVieC_04","contentTitle":"Email Writing"},
+            {"contentId":"1AT7IMLcA58","contentTitle":"Advers"},
+            {"contentId":"8pfQg26vfaA","contentTitle":"Verbs"}  
         ],
         "quiz":[
             {

@@ -3,12 +3,15 @@ import Card from './Card';
 import courseData from './data.json';
 
 function Courses() {
+  {courseData.map((item) => (
+    console.log("imageurl form course", item.imgUrl)
+  ))}
   return (
     <div className='min-h-screen flex flex-col items-center md:px-32 px-5 my-10'>
       <div className='flex flex-wrap justify-between gap-6 mt-6'> {/* Use justify-between to evenly distribute the cards */}
         {courseData.map((item) => (
           <div key={item.id} className="w-1/2 md:w-1/3 lg:w-1/4"> {/* Specify width for each card */}
-            <Card coursedetails={item} /> {/* Render the Card component for each course */}
+            <Card coursedetails={item} imageurl={item.imgUrl}/> {/* Render the Card component for each course */}
           </div>
         ))}
       </div>

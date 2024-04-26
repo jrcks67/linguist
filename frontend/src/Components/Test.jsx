@@ -4,7 +4,7 @@ import NewNavbar from "../Containers/NewNavbar";
 import testdata from "./Quiz.json"
 
 const Loading = () => (
-  <div className="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center items-center border-2 rounded-tr-[50%] rounded-bl-[50%]">
+  <div className="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center items-center border-2">
     <p className="text-xl text-gray-500">Loading...</p>
   </div>
 );
@@ -143,7 +143,7 @@ const Test = () => {
           {showResult && (
             <div>
               <h3 className="text-2xl font-medium">Your Score: </h3>
-              <div className="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center items-center border-2 rounded-tr-[50%] rounded-bl-[50%]">
+              <div className="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center items-center border-2">
               <h3 className={`text-xl ${status === "Passed" ? "text-green-800" : "text-red-500"}`}>
               {status}
             </h3>
