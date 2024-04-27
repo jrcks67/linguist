@@ -1,12 +1,11 @@
 import React ,{useState,useEffect}from 'react';
-import Navbar from '../Containers/Navbar';
-import NewNavbar from '../Containers/NewNavbar';
 import { Link } from 'react-router-dom';
 import CardSlider from './CardSlider';
 import axios from 'axios';
 import courseData from './data.json';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCourseData } from '../Redux/actions/courseActions';
+import NewNavbar from '../containers/NewNavbar';
 
 const Home = () => {
   const dispatch = useDispatch();

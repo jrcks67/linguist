@@ -1,8 +1,7 @@
 import React from 'react';
-import Navbar from '../Containers/Navbar';
-import NewNavbar from '../Containers/NewNavbar';
 import { Link } from 'react-router-dom';
 import {GoogleLogin} from '@react-oauth/google';
+import NewNavbar from '../containers/NewNavbar';
 
 function SignUp() {
   return (

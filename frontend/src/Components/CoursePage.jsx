@@ -46,10 +46,10 @@
 // export default CoursePage;
 
 import React, { useState } from 'react';
-import NewNavbar from '../Containers/NewNavbar';
 import CoursePageHeader from './CoursePageHeader';
 import CourseContent from './CourseContent';
 import { useLocation } from 'react-router-dom';
+import NewNavbar from '../containers/NewNavbar';
 
 function CoursePage() {
     const location=useLocation();

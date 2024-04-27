@@ -1,9 +1,8 @@
 import React from 'react';
-import Navbar from '../Containers/Navbar';
 import learnVideo from '../assets/learnVideo.mp4';
 import Courses from './Courses';
-import NewNavbar from '../Containers/NewNavbar';
 import img from "../assets/images/LearnCover/cover.png";
+import NewNavbar from '../containers/NewNavbar';
 
 const Learn = () => {
   return (

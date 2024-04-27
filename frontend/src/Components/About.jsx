@@ -1,8 +1,7 @@
 import React from 'react';
-import Navbar from '../Containers/Navbar';
-import NewNavbar from '../Containers/NewNavbar';
 import img from "../assets/images/LearnCover/about.png";
 import { Link } from 'react-router-dom';
+import NewNavbar from '../containers/NewNavbar';
 
 function About() {
   return (

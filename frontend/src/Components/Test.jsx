@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import NewNavbar from "../Containers/NewNavbar"; 
 import testdata from "./Quiz.json"
+import NewNavbar from "../containers/NewNavbar";
 
 const Loading = () => (
   <div className="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center items-center border-2">
