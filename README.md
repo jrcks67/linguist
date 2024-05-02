@@ -12,4 +12,5 @@
 
 1. Frontend 
 2. Backend
-3. Database 
+3. Database
+Setting up Jenkins pipeline for this project. Will get rebuilt on every push to main branch. 
