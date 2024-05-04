@@ -3,10 +3,10 @@ const router = express.Router()
 const homeController = require("../../controllers/linguistController")
 
 router.post("/signup",homeController.createUser);
-router.post("/login",homeController.login);
-router.get("/confirm",homeController.confirm);
+router.post("/login",homeController.loginUser);
+router.get("/confirm",homeController.confirmUser);
 router.get("/data",homeController.getAllContent);
-router.post("/progress",homeController.progress);
+router.post("/progress",homeController.updateProgress);
 
 
 
