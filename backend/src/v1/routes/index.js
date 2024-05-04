@@ -7,6 +7,11 @@ const homeController = require("../../controllers/linguistController")
    res.json(resposne)
   })
 
+  router.get("/course-content", (req, res) => { // fetch static content for course display
+    const resposne = homeController.getAllContent(req)
+    res.json(resposne)
+   })
+
 // router.get("/user?email",homeController.getUserContent())// fetch user progress and displayed content object
 
 // router.post("/user/:id",homeController.getUser()) // post user progress real time data

@@ -11,7 +11,8 @@ const getUser = (req,res) => {
 }
 
 const getAllContent = (req,res) => {
-
+    const data = linguistServices.getAllContent()
+    return data;
 }
 
 

@@ -18,7 +18,7 @@ const getUser = () => {
 
 } 
 const getAllContent = () => {
-
+    return data;
 }
 
 const progress = () => {
