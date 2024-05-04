@@ -5,7 +5,7 @@ const homeController = require("../../controllers/linguistController")
 router.post("/signup",homeController.createUser);
 router.post("/login",homeController.loginUser);
 router.get("/confirm",homeController.confirmUser);
-router.get("/data",homeController.getAllContent);
+router.get("/data",homeController.getAllData);
 router.post("/progress",homeController.updateProgress);
 
 

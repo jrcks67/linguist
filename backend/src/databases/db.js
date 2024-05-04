@@ -6,14 +6,9 @@ const LearningData = require('./data.json');
 
 require('dotenv').config();
 
-const MONGODB_URI = process.env.MONGODB_URI;
+const MONGODB_URI = "mongodb+srv://admin:admin@cluster0.zqjlupr.mongodb.net/";
 
-mongoose.connect(MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false
-})
+mongoose.connect(MONGODB_URI)
   .then(() => {
     console.log('MongoDB connected successfully');
   })
