@@ -20,6 +20,8 @@ const userSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  confirmed: { type: Boolean, default: false },
+
   progress: { 
       progressMade: {type: String, required: true, default: 0}, // stores the percentage of progress based on total content available(words+phrases+sentences) and the content displayed to the user
       displayedContent: {
@@ -31,6 +33,6 @@ const userSchema = new Schema({
   }
 );
 
-const User = mongoose.model('User', userSchema);
 
-module.exports = User;
+
+module.exports = userSchema;
