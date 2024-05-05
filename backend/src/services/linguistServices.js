@@ -98,8 +98,12 @@ const login = async (req,res) => {
             res.status(400).json({msg:"user doesnt exist"})
         }
         const user = await User.findOne({ username });
+        if(user.confirm == true) {
         const token = jwt.sign({username},jwtPassword)
         res.send({user,token})
+        } else {
+            res.send({msg:"please confirm your email to login"})
+        }
         
     }
     catch(err){
