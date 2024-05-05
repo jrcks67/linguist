@@ -1,89 +1,951 @@
-{
-    "words": [
-      { "word": "hola", "translation": "hello", "part_of_speech": "interjection" },
-      { "word": "casa", "translation": "house", "part_of_speech": "noun" },
-      { "word": "perro", "translation": "dog", "part_of_speech": "noun" },
-      { "word": "gato", "translation": "cat", "part_of_speech": "noun" },
-      { "word": "amarillo", "translation": "yellow", "part_of_speech": "adjective" },
-      { "word": "rojo", "translation": "red", "part_of_speech": "adjective" },
-      { "word": "manzana", "translation": "apple", "part_of_speech": "noun" },
-      { "word": "mesa", "translation": "table", "part_of_speech": "noun" },
-      { "word": "ciudad", "translation": "city", "part_of_speech": "noun" },
-      { "word": "viaje", "translation": "trip", "part_of_speech": "noun" },
-      { "word": "familia", "translation": "family", "part_of_speech": "noun" },
-      { "word": "amigo", "translation": "friend", "part_of_speech": "noun" },
-      { "word": "jugar", "translation": "to play", "part_of_speech": "verb" },
-      { "word": "leer", "translation": "to read", "part_of_speech": "verb" },
-      { "word": "comer", "translation": "to eat", "part_of_speech": "verb" },
-      { "word": "beber", "translation": "to drink", "part_of_speech": "verb" },
-      { "word": "bailar", "translation": "to dance", "part_of_speech": "verb" },
-      { "word": "cantar", "translation": "to sing", "part_of_speech": "verb" },
-      { "word": "correr", "translation": "to run", "part_of_speech": "verb" },
-      { "word": "nadar", "translation": "to swim", "part_of_speech": "verb" },
-      { "word": "verde", "translation": "green", "part_of_speech": "adjective" },
-      { "word": "azul", "translation": "blue", "part_of_speech": "adjective" },
-      { "word": "plaza", "translation": "square", "part_of_speech": "noun" },
-      { "word": "cama", "translation": "bed", "part_of_speech": "noun" },
-      { "word": "carta", "translation": "letter", "part_of_speech": "noun" },
-      { "word": "ventana", "translation": "window", "part_of_speech": "noun" },
-      { "word": "puerta", "translation": "door", "part_of_speech": "noun" },
-      { "word": "lápiz", "translation": "pencil", "part_of_speech": "noun" },
-      { "word": "libro", "translation": "book", "part_of_speech": "noun" },
-      { "word": "película", "translation": "movie", "part_of_speech": "noun" },
-      { "word": "escuela", "translation": "school", "part_of_speech": "noun" },
-      { "word": "trabajo", "translation": "work", "part_of_speech": "noun" },
-      { "word": "feliz", "translation": "happy", "part_of_speech": "adjective" },
-      { "word": "triste", "translation": "sad", "part_of_speech": "adjective" },
-      { "word": "grande", "translation": "big", "part_of_speech": "adjective" },
-      { "word": "pequeño", "translation": "small", "part_of_speech": "adjective" },
-      { "word": "bueno", "translation": "good", "part_of_speech": "adjective" },
-      { "word": "malo", "translation": "bad", "part_of_speech": "adjective" },
-      { "word": "rápido", "translation": "fast", "part_of_speech": "adjective" },
-      { "word": "lento", "translation": "slow", "part_of_speech": "adjective" },
-      { "word": "nuevo", "translation": "new", "part_of_speech": "adjective" },
-      { "word": "viejo", "translation": "old", "part_of_speech": "adjective" },
-      { "word": "frío", "translation": "cold", "part_of_speech": "adjective" },
-      { "word": "caliente", "translation": "hot", "part_of_speech": "adjective" }
-   
-    ],
-    
-    "phrases": [
-      { "phrase": "Buenos días", "translation": "Good morning" },
-      { "phrase": "Buenas tardes", "translation": "Good afternoon" },
-      { "phrase": "Buenas noches", "translation": "Good evening/night" },
-      { "phrase": "¿Cómo te llamas?", "translation": "What's your name?" },
-      { "phrase": "Me llamo María", "translation": "My name is Maria" },
-      { "phrase": "¿Dónde está el baño?", "translation": "Where is the bathroom?" },
-      { "phrase": "Por favor, gracias, de nada", "translation": "Please, thank you, you're welcome" },
-      { "phrase": "¿Cuántos años tienes?", "translation": "How old are you?" },
-      { "phrase": "¿Dónde vives?", "translation": "Where do you live?" },
-      { "phrase": "¿Qué te gusta hacer en tu tiempo libre?", "translation": "What do you like to do in your free time?" },
-      { "phrase": "¿Cómo se dice 'hello' en español?", "translation": "How do you say 'hello' in Spanish?" },
-      { "phrase": "¿Puedes ayudarme, por favor?", "translation": "Can you help me, please?" },
-      { "phrase": "Perdón, no entiendo", "translation": "Sorry, I don't understand" },
-      { "phrase": "¿A qué hora es la cita?", "translation": "What time is the appointment?" },
-      { "phrase": "¿Cuál es tu comida favorita?", "translation": "What is your favorite food?" },
-      { "phrase": "Tengo una pregunta importante", "translation": "I have an important question" },
-      { "phrase": "No sé cómo llegar allí", "translation": "I don't know how to get there" }
 
-    ],
-  
-    "sentences": [
-      { "sentence": "Hoy hace sol y el cielo está despejado", "translation": "Today is sunny and the sky is clear" },
-      { "sentence": "El concierto fue fantástico, me encantó la música", "translation": "The concert was fantastic, I loved the music" },
-      { "sentence": "¿Has estado alguna vez en España?", "translation": "Have you ever been to Spain?" },
-      { "sentence": "Me gusta mucho leer libros de aventuras", "translation": "I really like reading adventure books" },
-      { "sentence": "Esta película es muy emocionante, la recomiendo", "translation": "This movie is very exciting, I recommend it" },
-      { "sentence": "Voy a visitar a mis abuelos este fin de semana", "translation": "I'm going to visit my grandparents this weekend" },
-      { "sentence": "Mi hermana mayor vive en otra ciudad", "translation": "My older sister lives in another city" },
-      { "sentence": "Ayer fuimos al parque y jugamos fútbol", "translation": "Yesterday we went to the park and played soccer" },
-      { "sentence": "Me encanta cocinar platos nuevos", "translation": "I love cooking new dishes" },
-      { "sentence": "Esta canción me recuerda a mi infancia", "translation": "This song reminds me of my childhood" },
-      { "sentence": "El trabajo en equipo es fundamental para este proyecto", "translation": "Teamwork is essential for this project" },
-      { "sentence": "Hace frío hoy, necesito abrigarme bien", "translation": "It's cold today, I need to bundle up" },
-      { "sentence": "Ella es muy creativa y talentosa en el arte", "translation": "She is very creative and talented in art" },
-      { "sentence": "¿Quieres venir al cine conmigo mañana?", "translation": "Do you want to come to the movies with me tomorrow?" },
-      { "sentence": "Todavía estoy aprendiendo español, pero me gusta mucho", "translation": "I'm still learning Spanish, but I like it a lot" }
-    ]
+[
+  {
+      "id":"1",
+      "title":"Arabic Language",
+      "description":"This program is designed to take you from ZERO knowledge in Arabic to MASTERING the Arabic language through our SYSTEM",
+      "level":"Beginner",
+      "imgUrl":"../assets/images/English/english2.png",
+      "language":"Arabic",
+      "content":[
+          {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
+          {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Arabic"},
+          {"contentId":"8pfQg26vfaA","contentTitle":"Sentence formation"},
+          {"contentId":"LTwCmA6AjdI","contentTitle":"Reading and writing"},
+          {"contentId":"c-7SVieC_04","contentTitle":"Nouns and Pronouns"},
+          {"contentId":"1AT7IMLcA58","contentTitle":"Prepositions"},
+          {"contentId":"8pfQg26vfaA","contentTitle":"Adjectives"},
+          {"contentId":"LTwCmA6AjdI","contentTitle":"Essay writing"},
+          {"contentId":"c-7SVieC_04","contentTitle":"Email Writing"},
+          {"contentId":"1AT7IMLcA58","contentTitle":"Advers"},
+          {"contentId":"8pfQg26vfaA","contentTitle":"Verbs"}
+      ],
+      "quiz":[
+          {
+            "id": 1,
+            "question": "What is the correct translation for 'telephone'",
+            "options": [
+              "ماء",
+              "دراجة",
+              "هاتف",
+              "شمسية"
+            ],
+            "answer": "شمسية",
+            "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+          },
+          {
+            "id": 2,
+            "question": "How do you say 'Good morning'?",
+            "options": [
+              "مع السلامة.",
+              "صباح الخير.",
+              "مساء الخير.",
+              "! نهارك سعيد"
+            ],
+            "answer":  "صباح الخير.",
+            "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+          },
+          {
+            "id": 3,
+            "question":"What is the correct translation for 'Please'",
+            "options": [
+              "أهلا.",
+              "مع السلامة.",
+              "من فضلك.",
+              "يسار"
+            ],
+            "answer": "من فضلك.",
+            "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+          },
+          {
+            "id": 4,
+            "question": "How do you say 'Thank You'?",
+            "options": [
+              "شكرا.",
+              "آسف",
+              "يمين",
+              "مع السلامة."
+            ],
+            "answer":  "آسف",
+            "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+          },
+          {
+            "id": 5,
+            "question": "How do you say 'water'",
+            "options": [
+              "ماء",
+              "طبق",
+              "ماء",
+              "حليب"
+            ],
+            "answer":  "طبق",
+            "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+          },
+          {
+            "id": 6,
+            "question": "What is the correct translation for 'hospital'",
+            "options": [
+              "ماء",
+              "مستشفى",
+              "أسبرين",
+              "البيت"
+            ],
+            "answer":  "أسبرين",
+            "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+          }
+        ]
+  },
+{
+      "id":"2",
+      "title":"Learn Advance German",
+      "description":"Learn German language with fun bite-size lessons for beginners. Start speaking German & pass the Goethe A1 German exam!",
+      "level":"Advance",
+      "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+      "content":[
+      {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Arabic"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Sentence formation"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Reading an=d writing"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Verbs"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Nouns and Pronouns"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Adverbs"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Prepositions"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Adjectives"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Essay writing"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Email Writing"}
+      ],
+      "quiz":[
+          {
+            "id": 1,
+            "question": "What is the German word for apple ",
+            "options": [
+              "Apfel",
+              "Banane",
+              "Kirsche",
+              "Erdbeere"
+            ],
+            "answer": "Apfel ",
+            "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+          },
+          {
+            "id": 2,
+            "question": "Which of the following means Hello in German ",
+            "options": [
+              "Guten Tag",
+              "Auf Wiedersehen",
+              "Danke",
+              "Bitte"
+            ],
+            "answer":  "Guten Tag",
+            "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+          },
+          {
+            "id": 3,
+            "question":"What does Ich liebe dich mean in English",
+            "options": [
+              "I hate you",
+              "I miss you",
+              " I love you",
+              "I need you"
+            ],
+            "answer": "I love you",
+            "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+          },
+          {
+            "id": 4,
+            "question": "What is cat in German",
+            "options": [
+              "Katze",
+              "Hund",
+              "Maus",
+              "Fisch"
+            ],
+            "answer":  "Katze",
+            "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+          },
+          {
+            "id": 5,
+            "question": "Which of the following is the German word for ",
+            "options": [
+              "Hallo",
+              "Tschüss",
+              "Bitte",
+              "Danke"
+            ],
+            "answer":  "Tschüss",
+            "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+          },
+          {
+            "id": 6,
+            "question": "What is Thank you in German",
+            "options": [
+              "Entschuldigung",
+              "Bitte",
+              "Danke",
+              "Auf Wiedersehen"
+            ],
+            "answer":  "Danke ",
+            "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+          }
+        ]
+  },
+{
+      "id":"3",
+      "title":"The English Conversation Course",
+      "description":"An English conversation course like no other - a course designed to get you speaking in every lesson!",
+      "level":"Beginner",
+      "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+      "content":[
+      {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in English"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Sentence formation"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Reading and writing"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Verbs"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Nouns and Pronouns"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Adverbs"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Prepositions"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Adjectives"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Essay writing"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Email Writing"}
+      ],
+      "quiz":[
+          {
+            "id": 1,
+            "question": "Which of the following is a polite way to greet someone you dont know ",
+            "options": [
+              "How is it going",
+              "Whats up",
+              "Hi, nice to meet you",
+              "Hey"
+            ],
+            "answer": "Hi, nice to meet you.",
+            "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+          },
+          {
+            "id": 2,
+            "question": "How do you respond to the question How are you",
+            "options": [
+              "fine, thanks",
+              "good, thanks",
+              "great, thanks",
+              "not bad, thanks"
+            ],
+            "answer":  "great, thanks",
+            "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+          },
+          {
+            "id": 3,
+            "question":"What do you say when you want someone to repeat what they said",
+            "options": [
+              "Could you please repeat that",
+              "What",
+              "Huh",
+              "Can you say that again"
+            ],
+            "answer": "Could you please repeat that",
+            "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+          },
+          {
+            "id": 4,
+            "question": "How do you politely interrupt someone in a conversation",
+            "options": [
+              "Excuse me, I just wanted to say",
+              "Hey, listen up",
+              "Stop talking",
+              "Wait, what did you say"
+            ],
+            "answer":  "Excuse me, I just wanted to say",
+            "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+          },
+          {
+            "id": 5,
+            "question": "What do you say when you want to make a suggestion to someone ",
+            "options": [
+              "You should do this",
+              "Why dont you do this",
+              "Do this",
+              "You must do this"
+            ],
+            "answer":  "Why dont you do this",
+            "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+          },
+          {
+            "id": 6,
+            "question": "How do you end a conversation politely",
+            "options": [
+              "Bye",
+              "See ya",
+              "Goodbye",
+              "It was nice talking to you"
+            ],
+            "answer":  "It was nice talking to you",
+            "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+          }
+        ]
+  },
+{
+      "id":"4",
+      "title":"The English learning Course",
+      "description":"English speaking course. 77 Hours of English language speaking, English listening practice. 1000 English language words",
+      "level":"Intermediate",
+      "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+      "content":[
+      {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in English"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Sentence formation"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Reading and writing"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Verbs"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Nouns and Pronouns"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Adverbs"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Prepositions"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Adjectives"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Essay writing"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Email Writing"}
+      ],
+      "quiz":[
+          {
+            "id": 1,
+            "question": "What is the correct form of the verb to be in the present tense for the pronoun he",
+            "options": [
+              "is",
+              "are",
+              "am",
+              "be"
+            ],
+            "answer": "is",
+            "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+          },
+          {
+            "id": 2,
+            "question": "How do you respond to the question How are you",
+            "options": [
+              "fine, thanks",
+              "good, thanks",
+              "great, thanks",
+              "not bad, thanks"
+            ],
+            "answer":  "great, thanks",
+            "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+          },
+          {
+            "id": 3,
+            "question":"Which of the following is a correct plural form of child",
+            "options": [
+              "childs",
+              "child",
+              "childrens",
+              "children"
+            ],
+            "answer": "childrens",
+            "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+          },
+          {
+            "id": 4,
+            "question": "How do you politely interrupt someone in a conversation",
+            "options": [
+              "Excuse me, I just wanted to say",
+              "Hey, listen up",
+              "Stop talking",
+              "Wait, what did you say"
+            ],
+            "answer":  "Excuse me, I just wanted to say",
+            "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+          },
+          {
+            "id": 5,
+            "question": "What is the past tense of the verb to go",
+            "options": [
+              "go",
+              "gone",
+              "went",
+              "going"
+            ],
+            "answer":  "went",
+            "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+          },
+          {
+            "id": 6,
+            "question": "How do you end a conversation politely",
+            "options": [
+              "Bye",
+              "See ya",
+              "Goodbye",
+              "It was nice talking to you"
+            ],
+            "answer":  "It was nice talking to you",
+            "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+          }
+        ]
+  },
+{
+      "id":"5",
+      "title":"Learn Dutch",
+      "description":"Learn Dutch for Beginners: Fully Master the Essentials of Dutch Speaking (A1-A2) - Unique Learning Dutch Method, 14 hrs",
+      "level":"Beginner",
+      "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+      "content":[
+      {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Dutch"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Sentence formation"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Reading and writing"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Verbs"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Nouns and Pronouns"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Adverbs"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Prepositions"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Adjectives"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Essay writing"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Email Writing"}
+      ],
+      "quiz":[
+          {
+            "id": 1,
+            "question": "What is the Dutch word for Hello ",
+            "options": [
+              "Hallo",
+              "Goedemorgen",
+              "Dag",
+              "Hoi"
+            ],
+            "answer": "Hallo",
+            "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+          },
+          {
+            "id": 2,
+            "question": "What does bedankt mean in English",
+            "options": [
+              "Goodbye",
+              "please",
+              "thank you",
+              "excuse"
+            ],
+            "answer":  "thank you ",
+            "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+          },
+          {
+            "id": 3,
+            "question":"What is the Dutch word for house",
+            "options": [
+              "Huis",
+              "Winkel",
+              "School",
+              "Straat"
+            ],
+            "answer": "Huis",
+            "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+          },
+          {
+            "id": 4,
+            "question": "How do you say I love you in Dutch",
+            "options": [
+              "Ik hou van jou",
+              "Ik houd van je",
+              " Ik houd van jou",
+              "Ik hou van jouw"
+            ],
+            "answer":  "Ik hou van jou",
+            "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+          },
+          {
+            "id": 5,
+            "question": "Which of the following means yes in Dutch",
+            "options": [
+              "Nee",
+              "Ja",
+              "Misschien",
+              "Dank "
+            ],
+            "answer":  "Ja",
+            "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+          },
+          {
+            "id": 6,
+            "question": "What is the Dutch word for CAT ",
+            "options": [
+              "Kat",
+              "Hond",
+              "Vogel",
+              "Vis"
+            ],
+            "answer":  "Kat",
+            "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+          }
+        ]
+  },
+{
+      "id":"6",
+      "title":"Polish Language Course",
+      "description":"Learn Polish NATURALLY with a Native Teacher. Course - Polish For Beginners. Polish Grammar. Polish Vocabulary",
+      "level":"Beginner",
+      "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+      "content":[
+      {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Polish"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Sentence formation"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Reading and writing"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Verbs"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Nouns and Pronouns"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Adverbs"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Prepositions"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Adjectives"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Essay writing"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Email Writing"}
+      ],
+      "quiz":[
+          {
+            "id": 1,
+            "question": "What is the Polish word for Hello ",
+            "options": [
+              "Hallo",
+              "Goedemorgen",
+              "Cześć",
+              "Hoi"
+            ],
+            "answer": "Cześć",
+            "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+          },
+          {
+            "id": 2,
+            "question": "What does bedankt mean in Polish",
+            "options": [
+              "Goodbye",
+              "dziękuję",
+              "thank you",
+              "excuse"
+            ],
+            "answer":  "dziękuję",
+            "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+          },
+          {
+            "id": 3,
+            "question":"What is the Polish word for house",
+            "options": [
+              "Huis",
+              "Winkel",
+              "dom",
+              "Straat"
+            ],
+            "answer": "dom",
+            "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+          },
+          {
+            "id": 4,
+            "question": "How do you say I love you in Polish",
+            "options": [
+              "Ik hou van jou",
+              "Kocham cię",
+              " Ik houd van jou",
+              "Ik hou van jouw"
+            ],
+            "answer":  "Kocham cię",
+            "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+          },
+          {
+            "id": 5,
+            "question": "Which of the following means yes in Polish",
+            "options": [
+              "tak",
+              "Ja",
+              "Misschien",
+              "Dank "
+            ],
+            "answer":  "tak",
+            "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+          },
+          {
+            "id": 6,
+            "question": "What is the Polish word for CAT ",
+            "options": [
+              "Kat",
+              "kot",
+              "Vogel",
+              "Vis"
+            ],
+            "answer":  "kot",
+            "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+          }
+        ]
+  },
+{
+      "id":"7",
+      "title":"Learn Hindi in 3 Weeks",
+      "description":"Complete Hindi language course with easy Grammar explanations supported with exercises, quizzes and practice material.",
+      "level":"Beginner",
+      "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+      "content":[
+      {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Hindi"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Sentence formation"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Reading and writing"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Verbs"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Nouns and Pronouns"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Adverbs"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Prepositions"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Adjectives"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Essay writing"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Email Writing"}
+      ],
+      "quiz":[
+          {
+            "id": 1,
+            "question": "What is the Hindi word for Hello ",
+            "options": [
+              "नमस्ते",
+              "सूरज",
+              "खुशी ",
+              "पानी"
+            ],
+            "answer": "नमस्ते",
+            "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+          },
+          {
+            "id": 2,
+            "question": "What does धन्यवाद mean in Hindi",
+            "options": [
+              "Goodbye",
+              "bye",
+              "thank you",
+              "excuse"
+            ],
+            "answer":  "thank you",
+            "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+          },
+          {
+            "id": 3,
+            "question":"What is the Hindi word for house",
+            "options": [
+              "Huis",
+              "खुशी",
+              "घर",
+              "पानी"
+            ],
+            "answer": "घर",
+            "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+          },
+          {
+            "id": 4,
+            "question": "How do you say I love you in Hindi",
+            "options": [
+              "Ik hou van jou",
+              "मैं तुमसे प्यार करता",
+              " Ik houd van jou",
+              "Ik hou van jouw"
+            ],
+            "answer":  "मैं तुमसे प्यार करता",
+            "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+          },
+          {
+            "id": 5,
+            "question": "Which of the following means yes in Hindi",
+            "options": [
+              "tak",
+              "Ja",
+              "Misschien",
+              "Dank "
+            ],
+            "answer":  "tak",
+            "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+          },
+          {
+            "id": 6,
+            "question": "What is the Hindi word for CAT ",
+            "options": [
+              "Kat",
+              "Haan",
+              "Vogel",
+              "Vis"
+            ],
+            "answer":  "Haan",
+            "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+          }
+        ]
+  },
+{
+      "id":"8",
+      "title":"Complete Italian course",
+      "description":"Learn Italian from levels A1 to B2.Master the Italian language in a fun & easy way in 3 months or less even if you don't have much free time to study!!!",
+      "level":"Beginner",
+      "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+      "content":[
+      {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Italian"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Sentence formation"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Reading and writing"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Verbs"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Nouns and Pronouns"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Adverbs"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Prepositions"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Adjectives"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Essay writing"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Email Writing"}
+      ],
+      "quiz":[
+          {
+            "id": 1,
+            "question": "What is the Italian word for Hello ",
+            "options": [
+              "Buon ",
+              "Ciao",
+              "Grazie",
+              "Arrivederci"
+            ],
+            "answer": "Ciao",
+            "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+          },
+          {
+            "id": 2,
+            "question": "What does grazie mean in English",
+            "options": [
+              "thank you",
+              "Ciao",
+              "Grazie",
+              "Arrivederci"
+            ],
+            "answer":  "thank you",
+            "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+          },
+          {
+            "id": 3,
+            "question":"What is the Italian word for goodbye",
+            "options": [
+              "Buon ",
+              "Ciao",
+              "Grazie",
+              "Arrivederci"
+
+            ],
+            "answer": "Arrivederci",
+            "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+          },
+          {
+            "id": 4,
+            "question": "How do you say I love you in Italian",
+            "options": [
+              "Buon ",
+              "Ti amo",
+              "Grazie",
+              "Arrivederci"
+            ],
+            "answer":  "Ti amo",
+            "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+          },
+          {
+            "id": 5,
+            "question": "Which of the following means yes in Italian",
+            "options": [
+              "Si",
+              "Ciao",
+              "Grazie",
+              "Arrivederci"
+
+            ],
+            "answer":  "Si",
+            "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+          },
+          {
+            "id": 6,
+            "question": "What is the Italian word for CAT ",
+            "options": [
+              "Buon ",
+              "Ciao",
+              "Grazie",
+              "Gatto"
+            ],
+            "answer":  "Gatto",
+            "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+          }
+        ]
+  },
+{
+      "id":"9",
+      "title":"Spanish - Course",
+      "description":"Build on from the Spanish skills you learnt in Course 1 and learn how to communicate in even more situations",
+      "level":"Beginner",
+      "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+      "content":[
+      {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Spanish"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Sentence formation"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Reading and writing"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Verbs"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Nouns and Pronouns"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Adverbs"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Prepositions"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Adjectives"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Essay writing"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Email Writing"}
+      ],
+      "quiz":[
+          {
+            "id": 1,
+            "question": "What is the Spanish word for Hello ",
+            "options": [
+              "Buon ",
+              "Ciao",
+              "Grazie",
+              "Arrivederci"
+            ],
+            "answer": "Ciao",
+            "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+          },
+          {
+            "id": 2,
+            "question": "What does grazie mean in English",
+            "options": [
+              "thank you",
+              "Ciao",
+              "Grazie",
+              "Arrivederci"
+            ],
+            "answer":  "thank you",
+            "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+          },
+          {
+            "id": 3,
+            "question":"What is the Spanish word for goodbye",
+            "options": [
+              "Buon ",
+              "Ciao",
+              "Grazie",
+              "Arrivederci"
+
+            ],
+            "answer": "Arrivederci",
+            "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+          },
+          {
+            "id": 4,
+            "question": "How do you say I love you in Spanish",
+            "options": [
+              "Buon ",
+              "Ti amo",
+              "Grazie",
+              "Arrivederci"
+            ],
+            "answer":  "Ti amo",
+            "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+          },
+          {
+            "id": 5,
+            "question": "Which of the following means yes in Spanish",
+            "options": [
+              "Si",
+              "Ciao",
+              "Grazie",
+              "Arrivederci"
+
+            ],
+            "answer":  "Si",
+            "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+          },
+          {
+            "id": 6,
+            "question": "What is the Spanish word for CAT ",
+            "options": [
+              "Buon ",
+              "Ciao",
+              "Grazie",
+              "Gatto"
+            ],
+            "answer":  "Gatto",
+            "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+          }
+        ]
+  },
+{
+      "id":"10",
+      "title":"Online Japanese N5 Course",
+      "description":"Master the basics of writing and pronunciation of Japanese vocabulary with 15 lessons",
+      "level":"Beginner",
+      "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+      "content":[
+      {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Japanese"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Sentence formation"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Reading and writing"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Verbs"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Nouns and Pronouns"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Adverbs"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Prepositions"},
+      {"contentId":"c-7SVieC_04","contentTitle":"Adjectives"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Essay writing"},
+      {"contentId":"8pfQg26vfaA","contentTitle":"Email Writing"}
+      ],
+      "quiz":[
+          {
+            "id": 1,
+            "question": "What is the Japanese word for Hello ",
+            "options": [
+              "こんにちは ",
+              "ありがとう ",
+              "こんばんは ",
+              "おはようございます"
+            ],
+            "answer": "おはようございます",
+            "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+          },
+          {
+            "id": 2,
+            "question": "What does ありがとう mean in English",
+            "options": [
+              "thank you",
+              "Ciao",
+              "Grazie",
+              "Arrivederci"
+            ],
+            "answer":  "thank you",
+            "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+          },
+          {
+            "id": 3,
+            "question":"What is the Japanese word for goodbye",
+            "options": [
+              "Sayounara",
+              "Ciao",
+              "Grazie",
+              "Arrivederci"
+
+            ],
+            "answer": "Sayounara",
+            "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+          },
+          {
+            "id": 4,
+            "question": "How do you say I love you in Japanese",
+            "options": [
+              "Buon ",
+              "Ti amo",
+              "Aishiteru",
+              "Arrivederci"
+            ],
+            "answer":  "Aishiteru",
+            "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+          },
+          {
+            "id": 5,
+            "question": "Which of the following means yes in Japanese",
+            "options": [
+              "Si",
+              "Ciao",
+              "Hai",
+              "Arrivederci"
+
+            ],
+            "answer":  "Hai ",
+            "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+          },
+          {
+            "id": 6,
+            "question": "What is the Japanese word for CAT ",
+            "options": [
+              "Buon ",
+              "Neko",
+              "Grazie",
+              "Gatto"
+            ],
+            "answer":  "Neko",
+            "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+          }
+        ]
   }
-  
+ 
+]

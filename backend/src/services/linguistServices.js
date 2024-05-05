@@ -32,6 +32,7 @@ const createUser = async (req, res) => {
         const newUser = new User({ username, email, password });
         await newUser.save();
         const confirmationToken = generateConfirmationToken(username);
+        console.log(confirmationToken)
         await sendConfirmationEmail(email, confirmationToken);
 
         res.status(201).json({ msg: "User created. Please check your email for confirmation." });
@@ -66,10 +67,10 @@ async function sendConfirmationEmail(email, confirmationToken) {
 }
 
 const confirm = async (req, res) => {
-    const { token } = req.params;
+    const token = req.query.token
+    console.log(token)
 
     try {
-
         const decoded = jwt.verify(token, jwtPassword);
         const { username } = decoded;
 
@@ -82,7 +83,9 @@ const confirm = async (req, res) => {
         user.confirmed = true;
         await user.save();
 
-        res.redirect('/login'); 
+        res.json({
+            confirmed: user.confirmed
+        }); 
     } catch (err) {
         console.error('Error confirming user:', err);
         res.status(500).json({ msg: 'Server error' });
@@ -95,10 +98,10 @@ const login = async (req,res) => {
 
     try {
         if(!userExists(username)){
-            res.status(400).json({msg:"user doesnt exist"})
+            return res.status(400).json({ msg: "User doesn't exists" });
         }
         const user = await User.findOne({ username });
-        if(user.confirm == true) {
+        if(user.confirmed == true) {
         const token = jwt.sign({username},jwtPassword)
         res.send({user,token})
         } else {
@@ -107,7 +110,7 @@ const login = async (req,res) => {
         
     }
     catch(err){
-        res.json({msg:"User doesn't exist"})
+        return res.status(400).json({ msg: "User doesn't exists" });
     }
 }
 
@@ -135,7 +138,7 @@ const progress = async (req,res) => {
             user = await User.findOne({username})
             user.progress = progress;
             await user.save()
-
+            res.status(200).json({ msg: "Progress Updated" });
         }
     } catch (err){
         res.error(err)

@@ -6,7 +6,7 @@ const LearningData = require('./data.json');
 
 require('dotenv').config();
 
-const MONGODB_URI = "mongodb+srv://admin:admin@cluster0.zqjlupr.mongodb.net/";
+const MONGODB_URI = "mongodb://localhost:27017/linguist";
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
@@ -16,11 +16,4 @@ mongoose.connect(MONGODB_URI)
     console.error('MongoDB connection error:', err);
   });
 
-const User = mongoose.model('User', Schema);
-
-
-
-module.exports = {
-  User,
-  LearningData
-};
+module.exports =  mongoose.model('users', Schema);
