@@ -64,6 +64,7 @@ async function sendConfirmationEmail(email, confirmationToken) {
     };
 
     await transporter.sendMail(mailOptions);
+
 }
 
 const confirm = async (req, res) => {

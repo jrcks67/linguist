@@ -1,4 +1,5 @@
-const linguistServices = require("../services/linguistServices");
+
+const linguistServices = require("../services/linguistServices")
 
 const createUser = async (req, res) => {
     try {
@@ -45,6 +46,7 @@ const updateProgress = async (req, res) => {
         res.status(500).json({ msg: "Server error" });
     }
 };
+
 
 module.exports = {
     createUser,

@@ -2,15 +2,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './Redux/store';
 import './App.css';
-import Home from './Components/Home';
-import Learn from './Components/Learn';
-import Login from './Components/Login';
-import Progress from './Components/Progress';
-import About from './Components/About';
-import SignUp from './Components/SignUp';
-import CoursePage from './Components/CoursePage';
-import Test from './Components/Test';
-import ProtectedRoutes from './Components/ProtectedRoutes';
+import Home from './Components/Home/Home';
+import Learn from './Components/CourseList/Learn';
+import Login from './Components/Login/Login';
+import Progress from './Components/CourseContent/Progress';
+import About from './Components/Home/About';
+import SignUp from './Components/Login/SignUp';
+import CoursePage from './Components/CourseContent/CoursePage';
+import Test from './Components/CourseContent/Test';
+import ProtectedRoutes from './Components/Login/ProtectedRoutes';
 
 
 
