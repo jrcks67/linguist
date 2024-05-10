@@ -5,7 +5,7 @@
         "title":"Arabic Language",
         "description":"This program is designed to take you from ZERO knowledge in Arabic to MASTERING the Arabic language through our SYSTEM",
         "level":"Beginner",
-        "imgUrl":"../assets/images/English/english2.png",
+        "imgUrl":"https://i.imghippo.com/files/UIi3U1715266563.jpg",
         "language":"Arabic",
         "content":[
             {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
@@ -100,7 +100,7 @@
         "title":"Learn Advance German",
         "description":"Learn German language with fun bite-size lessons for beginners. Start speaking German & pass the Goethe A1 German exam!",
         "level":"Advance",
-        "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+        "imgUrl":"https://i.imghippo.com/files/XFiEo1715265893.jpg",
         "content":[
         {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
         {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Arabic"},
@@ -194,7 +194,7 @@
         "title":"The English Conversation Course",
         "description":"An English conversation course like no other - a course designed to get you speaking in every lesson!",
         "level":"Beginner",
-        "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+        "imgUrl":"https://i.imghippo.com/files/q4ado1715265370.png",
         "content":[
         {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
         {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in English"},
@@ -288,7 +288,7 @@
         "title":"The English learning Course",
         "description":"English speaking course. 77 Hours of English language speaking, English listening practice. 1000 English language words",
         "level":"Intermediate",
-        "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+        "imgUrl":"https://i.imghippo.com/files/pUt8M1715265402.png",
         "content":[
         {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
         {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in English"},
@@ -382,7 +382,7 @@
         "title":"Learn Dutch",
         "description":"Learn Dutch for Beginners: Fully Master the Essentials of Dutch Speaking (A1-A2) - Unique Learning Dutch Method, 14 hrs",
         "level":"Beginner",
-        "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+        "imgUrl":"https://i.imghippo.com/files/Nk4fh1715266007.jpg",
         "content":[
         {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
         {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Dutch"},
@@ -476,7 +476,7 @@
         "title":"Polish Language Course",
         "description":"Learn Polish NATURALLY with a Native Teacher. Course - Polish For Beginners. Polish Grammar. Polish Vocabulary",
         "level":"Beginner",
-        "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+        "imgUrl":"https://i.imghippo.com/files/DZ42Q1715265466.jpg",
         "content":[
         {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
         {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Polish"},
@@ -570,7 +570,7 @@
         "title":"Learn Hindi in 3 Weeks",
         "description":"Complete Hindi language course with easy Grammar explanations supported with exercises, quizzes and practice material.",
         "level":"Beginner",
-        "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+        "imgUrl":"https://i.imghippo.com/files/0yLjW1715265497.jpg",
         "content":[
         {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
         {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Hindi"},
@@ -664,7 +664,7 @@
         "title":"Complete Italian course",
         "description":"Learn Italian from levels A1 to B2.Master the Italian language in a fun & easy way in 3 months or less even if you don't have much free time to study!!!",
         "level":"Beginner",
-        "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+        "imgUrl":"https://i.imghippo.com/files/ZHgz01715266375.jpg",
         "content":[
         {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
         {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Italian"},
@@ -760,7 +760,7 @@
         "title":"Spanish - Course",
         "description":"Build on from the Spanish skills you learnt in Course 1 and learn how to communicate in even more situations",
         "level":"Beginner",
-        "imgUrl":"../assets/images/Arabic/arabic.jpeg",
+        "imgUrl":"https://i.imghippo.com/files/bRzz51715266257.jpg",
         "content":[
         {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
         {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Spanish"},
@@ -856,7 +856,7 @@
         "title":"Online Japanese N5 Course",
         "description":"Master the basics of writing and pronunciation of Japanese vocabulary with 15 lessons",
         "level":"Beginner",
-        "imgUrl":"/Users/bhumikakalra/Desktop/FSAD_Assignment /linguist/frontend/src/assets/learnVideo.mp4",
+        "imgUrl":"https://i.imghippo.com/files/nOtss1715266470.jpg",
         "content":[
         {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
         {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Japanese"},
