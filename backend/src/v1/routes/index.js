@@ -2,17 +2,12 @@ const express = require("express")
 const router = express.Router()
 const homeController = require("../../controllers/linguistController")
 
- router.post("/user", (req, res) => { // create new user
-   const resposne = homeController.users(req)
-   res.json(resposne)
-  })
+router.post("/signup",homeController.createUser);
+router.post("/login",homeController.loginUser);
+router.post("/confirm",homeController.confirmUser);
+router.get("/data",homeController.getAllData);
+router.post("/progress",homeController.updateProgress);
 
-  router.get("/course-content", (req, res) => { // fetch static content for course display
-    const resposne = homeController.getAllContent(req)
-    res.json(resposne)
-   })
 
-// router.get("/user?email",homeController.getUserContent())// fetch user progress and displayed content object
 
-// router.post("/user/:id",homeController.getUser()) // post user progress real time data
 module.exports = router

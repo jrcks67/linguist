@@ -20,17 +20,19 @@ const userSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  confirmed: { type: Boolean, default: false },
+
   progress: { 
       progressMade: {type: String, required: true, default: 0}, // stores the percentage of progress based on total content available(words+phrases+sentences) and the content displayed to the user
-      displayedContent: {
-        wordsDisplayed: [{ type: String, required: true}], // stores an array of objects that contains all the words displayed to the user
-        phrasesDisplayed: [{type: String, required: true}], // stores an array of objects that contains all the phrases displayed to the user
-        sentenceDisplayed: [{type:String, required: true}] // stores an array of objects that contains all the sentencesdisplayed to the user
-      }
+      // displayedContent: {
+      //   wordsDisplayed: [{ type: String, required: true}], // stores an array of objects that contains all the words displayed to the user
+      //   phrasesDisplayed: [{type: String, required: true}], // stores an array of objects that contains all the phrases displayed to the user
+      //   sentenceDisplayed: [{type:String, required: true}] // stores an array of objects that contains all the sentencesdisplayed to the user
+      // }
     }
   }
 );
 
-const User = mongoose.model('User', userSchema);
 
-module.exports = User;
+
+module.exports = userSchema;
