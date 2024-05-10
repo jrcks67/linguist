@@ -29,11 +29,11 @@ const createUser = async (req, res) => {
             return res.status(400).json({ msg: "User already exists" });
         }
 
-        const newUser = new User({ username, email, password });
+        const newUser = new User({ username, password });
         await newUser.save();
-        const confirmationToken = generateConfirmationToken(username);
-        console.log(confirmationToken)
-        await sendConfirmationEmail(email, confirmationToken);
+      //  const confirmationToken = generateConfirmationToken(username);
+      //  console.log(confirmationToken)
+        // await sendConfirmationEmail(email, confirmationToken);
 
         res.status(201).json({ msg: "User created. Please check your email for confirmation." });
     } catch (err) {

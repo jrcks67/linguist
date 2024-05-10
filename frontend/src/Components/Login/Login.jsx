@@ -1,20 +1,17 @@
-import React,{useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import Navbar from '../../Containers/NavBar/Navbar';
 import { GoogleLogin } from '@react-oauth/google';
 
-
 function Login() {
-  const [isLoggedIn,setIsLoggedIn] = useState(false)
-  const [email, setEmail] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [error,setError] = useState(false)
-
+  const [error, setError] = useState(false);
 
   const handleSuccess = (response) => {
     console.log('Google login successful:', response);
-
-    setIsLoggedIn(true)
+    setIsLoggedIn(true);
   };
 
   const handleError = (error) => {
@@ -24,25 +21,35 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
+    getData();
 
     // testing
-    console.log('Email:', email);
+    console.log('username:', username);
     console.log('Password:', password);
-
-    setIsLoggedIn(true)
-    // axios.post('/users/login', { email, password })
-    // .then(response => {
-    //   
-    // })
-    // .catch(error => {
-    //    // Handle login error
-    // });
   };
+
+  async function getData() {
+    const res = await fetch("https://localhost:3001/login", {
+      method: 'POST',
+      Headers: {
+        'Content-Type': "application/json",
+        'Access-Control-Allow-Origin': '*'
+      },
+      body: JSON.stringify({
+        'username': username,
+        'password': password
+      })
+    });
+
+    const responseData = await res.json();
+    console.log(responseData);
+    alert(responseData)
+  }
 
   return (
     <div>
-      {isLoggedIn ? ( 
-        <Navigate to="/learn" /> 
+      {isLoggedIn ? (
+        <Navigate to="/learn" />
       ) : (
         <div>
           <Navbar />
@@ -53,13 +60,13 @@ function Login() {
                   <p className="font-semibold text-2xl tracking-wide">SignIn</p>
                 </div>
                 <div className='mr-5'>
-                  <p className="text-zinc-600 font-semibold">Email:</p>
+                  <p className="text-zinc-600 font-semibold">username:</p>
                   <input
                     className="outline-none h-10 px-5 border border-sm w-full mr-10 rounded-lg"
                     type="text"
-                    placeholder="Email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
                     required
                   />
                 </div>
@@ -105,7 +112,6 @@ function Login() {
       )}
     </div>
   );
-  
 }
 
 export default Login;
