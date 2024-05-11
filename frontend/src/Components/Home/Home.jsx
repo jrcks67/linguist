@@ -10,19 +10,9 @@ import Navbar from '../../Containers/NavBar/Navbar';
 const Home = () => {
 const dispatch = useDispatch();
  useEffect(()=>{
-  // const fetchData = async () => {
-  //   try{
-  //     const response=await axios.get('/data');
-  //     const data = response.data;
-  //     dispatch(setCourseData(data));
-  //   }catch(error){
-  //     console.log('error is fetching course list',error)
-  //   }
-  // };
-  // fetchData();
   getData();
   
- },[]);
+ },[dispatch]);
 
  async function getData() {
   try {
@@ -38,13 +28,11 @@ const dispatch = useDispatch();
     });
 
     const responseData = await res.json();
-    console.log(responseData);
+    dispatch(setCourseData(responseData));
   } catch (err) {
     console.log('error is fetching course list', err);
   }
 }
-
-
 
   return (
   <>
