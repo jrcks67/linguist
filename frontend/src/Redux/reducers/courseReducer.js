@@ -1,4 +1,4 @@
-import { SET_COURSE_DATA } from '../actions/actionTypes';
+import { SET_COURSE_DATA} from '../actions/actionTypes';
 
 const initialState = {
   courseData: []

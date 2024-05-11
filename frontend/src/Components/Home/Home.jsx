@@ -6,21 +6,45 @@ import { useDispatch} from 'react-redux';
 import { setCourseData } from '../../Redux/actions/courseActions';
 import Navbar from '../../Containers/NavBar/Navbar';
 
+
 const Home = () => {
 const dispatch = useDispatch();
  useEffect(()=>{
-  const fetchData = async () => {
-    try{
-      const response=await axios.get('/data');
-      const data = response.data;
-      dispatch(setCourseData(data));
-    }catch(error){
-      console.log('error is fetching course list',error)
-    }
-  };
-  fetchData();
+  // const fetchData = async () => {
+  //   try{
+  //     const response=await axios.get('/data');
+  //     const data = response.data;
+  //     dispatch(setCourseData(data));
+  //   }catch(error){
+  //     console.log('error is fetching course list',error)
+  //   }
+  // };
+  // fetchData();
+  getData();
   
- },[dispatch]);
+ },[]);
+
+ async function getData() {
+  try {
+    const token = sessionStorage.getItem('authorization'); 
+    const res = await fetch("http://localhost:3001/data", {
+      method: 'GET',
+      headers: {
+        'Accept': "application/json",
+        'Content-Type': "application/json",
+        'Authorization': `${token}`, 
+        'Access-Control-Allow-Origin': '*'
+      }
+    });
+
+    const responseData = await res.json();
+    console.log(responseData);
+  } catch (err) {
+    console.log('error is fetching course list', err);
+  }
+}
+
+
 
   return (
   <>

@@ -2,15 +2,19 @@ import React, { useEffect, useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import Navbar from '../../Containers/NavBar/Navbar';
 import { GoogleLogin } from '@react-oauth/google';
+import { useDispatch} from 'react-redux';
+import { setUserData } from '../../Redux/actions/courseActions';
 
 function Login() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
-
+  const dispatch = useDispatch();
   const handleSuccess = (response) => {
     console.log('Google login successful:', response);
+    dispatch(setUserData(response));
+    sessionStorage.setItem('authorization', response?.token);
     setIsLoggedIn(true);
   };
 
@@ -27,23 +31,31 @@ function Login() {
     console.log('username:', username);
     console.log('Password:', password);
   };
-
+ 
   async function getData() {
-    const res = await fetch("https://localhost:3001/login", {
-      method: 'POST',
-      Headers: {
-        'Content-Type': "application/json",
-        'Access-Control-Allow-Origin': '*'
-      },
-      body: JSON.stringify({
-        'username': username,
-        'password': password
-      })
-    });
-
+    try{
+      const res = await fetch("http://localhost:3001/login", {
+        method: 'POST',
+        headers: {
+          'Accept': "application/json",
+          'Content-Type': "application/json",
+          'Access-Control-Allow-Origin': '*'
+        },
+        body: JSON.stringify({
+          'username': username,
+          'password': password,
+        })
+      });
+  
     const responseData = await res.json();
+    if(responseData){
+      handleSuccess(responseData);    
+    }
     console.log(responseData);
-    alert(responseData)
+    }
+    catch(err){
+        console.log(err)
+    }
   }
 
   return (

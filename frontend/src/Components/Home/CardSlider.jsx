@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import data from '../data.json';
 
 function CardSlider() {
   const settings = {
@@ -26,9 +25,10 @@ function CardSlider() {
     ]
   };
 
-  // const courseData = useSelector(state => state?.course?.courseData); 
+   const courseData = useSelector(state => state?.course?.courseData); 
+   console.log("coursedata",courseData)
   // this code has to be removed
-  const courseData = data;
+  //const courseData = data;
 
   return (
     <div className='sm:w-[200px] sm:h-[150px] md:h-full md:w-[600px] space-x-8'>
