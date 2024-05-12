@@ -8,7 +8,7 @@
 3. Keep a track of the progress 
 
 
-## Setup the application 
+## Local Setup 
 
 ## 1. Frontend
 1. install npm
