@@ -104,7 +104,7 @@ const login = async (req,res) => {
         const user = await User.findOne({ username });
         if(user.confirmed == true) {
         const token = jwt.sign({username},jwtPassword)
-        res.send({user,token})
+        res.send({user,token,data})
         } else {
             res.send({msg:"please confirm your email to login"})
         }
@@ -115,6 +115,24 @@ const login = async (req,res) => {
     }
 }
 
+const homeData = (req,res) => {
+
+    fieldsToKeep = ["id","title", "description", "level", "imgUrl", "language"]
+    function filterFields(objects, fieldsToKeep) {
+      return objects.map(obj => {
+        const filteredObj = {};
+        fieldsToKeep.forEach(field => {
+          if (obj.hasOwnProperty(field)) {
+            filteredObj[field] = obj[field];
+          }
+        });
+        return filteredObj;
+      });
+    }
+    
+    const homeContentData = filterFields(data,fieldsToKeep)
+    res.json(homeContentData)
+    }
 
 const getAllData = async (req,res) => {
     const token = req.headers.authorization
@@ -125,7 +143,7 @@ const getAllData = async (req,res) => {
         }       
     }
     catch(err) {
-        res.status(400).error(err)
+      //  res.status(400).error(err)
     }
 }
 
@@ -153,5 +171,6 @@ module.exports = {
     confirm,
     login,
     getAllData,
-    progress
+    progress,
+    homeData
 };

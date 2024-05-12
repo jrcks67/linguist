@@ -18,7 +18,7 @@ function CourseContent({ course }) {
                     return (
                         index < countLimit && (
                             <>
-                                {index ? <hr className="hidden sm:block" /> : <div key={`divider-${index}`}></div>}
+                                {index ? <hr className="hidden sm:block" /> : <div key={`${index+1}`}></div>}
                                 <div key={`related-${index}`} className="flex gap-2 w-full items-center">
                                     <div className="h-16 w-16 bg-slate-300">
                                         <img

@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import Card from './Card';
 import { useSelector } from 'react-redux';
-import data from '../data.json';
 
 
 function Courses() {

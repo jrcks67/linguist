@@ -21,19 +21,7 @@ function SignUp() {
 
   const handleSignIn = (e) => {
     e.preventDefault();
-
-    // testing
-    console.log('Email:', email);
-    console.log('Password:', password);
-
-    setIsLoggedIn(true)
-    // axios.post('/signup', { email, password })
-    // .then(response => {
-    //   
-    // })
-    // .catch(error => {
-    //    // Handle login error
-    // });
+    setIsLoggedIn(true);
   };
   return (
     <>

@@ -17,14 +17,8 @@ const dispatch = useDispatch();
  async function getData() {
   try {
     const token = sessionStorage.getItem('authorization'); 
-    const res = await fetch("http://localhost:3001/data", {
-      method: 'GET',
-      headers: {
-        'Accept': "application/json",
-        'Content-Type': "application/json",
-        'Authorization': `${token}`, 
-        'Access-Control-Allow-Origin': '*'
-      }
+    const res = await fetch("http://localhost:3001/homedata", {
+      method: 'GET'
     });
 
     const responseData = await res.json();

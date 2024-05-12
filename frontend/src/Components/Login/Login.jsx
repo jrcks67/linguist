@@ -3,7 +3,7 @@ import { Link, Navigate } from 'react-router-dom';
 import Navbar from '../../Containers/NavBar/Navbar';
 import { GoogleLogin } from '@react-oauth/google';
 import { useDispatch} from 'react-redux';
-import { setUserData } from '../../Redux/actions/courseActions';
+import { setUserData , setCourseContentData } from '../../Redux/actions/courseActions';
 
 function Login() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -13,7 +13,7 @@ function Login() {
   const dispatch = useDispatch();
   const handleSuccess = (response) => {
     console.log('Google login successful:', response);
-    dispatch(setUserData(response));
+    dispatch(setUserData(response?.user));
     sessionStorage.setItem('authorization', response?.token);
     setIsLoggedIn(true);
   };
@@ -26,10 +26,6 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
     getData();
-
-    // testing
-    console.log('username:', username);
-    console.log('Password:', password);
   };
  
   async function getData() {
@@ -43,7 +39,7 @@ function Login() {
         },
         body: JSON.stringify({
           'username': username,
-          'password': password,
+          'password': password
         })
       });
   

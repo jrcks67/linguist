@@ -26,10 +26,6 @@ function CardSlider() {
   };
 
    const courseData = useSelector(state => state?.course?.courseData); 
-   console.log("coursedata",courseData)
-  // this code has to be removed
-  //const courseData = data;
-
   return (
     <div className='sm:w-[200px] sm:h-[150px] md:h-full md:w-[600px] space-x-8'>
       <Slider {...settings}>

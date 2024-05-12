@@ -6,19 +6,12 @@ import img from "../../assets/images/LearnCover/courseAccess.png";
 
 
 const useAuth = () => {
-    const user = {loggedIn:false}
+    const user = {loggedIn:sessionStorage.getItem('authorization')}
     return user && user.loggedIn
 }
 
 function  ProtectedRoutes()  {
-
-    // useEffect(()=>{
-    //     setTimeout(()=>{
-    //         Navigate("/login")
-    //     },1000)
-    // },[])
-
-    const authenticated = useAuth()
+ const authenticated = useAuth()
   return authenticated ? <Outlet/> : <>
    <Navbar/>
       <div className='md:min-h-screen flex flex-col md:flex-row items-center justify-center gap-5 md:mx-32 mx-5 mt-8 pb-25'>

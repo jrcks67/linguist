@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {useNavigate } from "react-router-dom";
 import NewNavbar from '../../Containers/NavBar/Navbar';
-import { useLocation } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 const Loading = () => (
   <div className="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center items-center border-2">
@@ -9,7 +9,6 @@ const Loading = () => (
   </div>
 );
 
-// Utility function to format time
 const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
@@ -21,81 +20,7 @@ const Test = () => {
   const navigate = useNavigate();
    
   //this code has to be removed
-  const [questions, setQuestions] = useState([
-    {
-      "id": 1,
-      "question": "What is the correct translation for 'telephone'",
-      "options": [
-        "ماء",
-        "دراجة",
-        "هاتف",
-        "شمسية"
-      ],
-      "answer": "شمسية",
-      "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
-    },
-    {
-      "id": 2,
-      "question": "How do you say 'Good morning'?",
-      "options": [
-        "مع السلامة.",
-        "صباح الخير.",
-        "مساء الخير.",
-        "! نهارك سعيد"
-      ],
-      "answer":  "صباح الخير.",
-      "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
-    },
-    {
-      "id": 3,
-      "question":"What is the correct translation for 'Please'",
-      "options": [
-        "أهلا.",
-        "مع السلامة.",
-        "من فضلك.",
-        "يسار"
-      ],
-      "answer": "من فضلك.",
-      "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
-    },
-    {
-      "id": 4,
-      "question": "How do you say 'Thank You'?",
-      "options": [
-        "شكرا.",
-        "آسف",
-        "يمين",
-        "مع السلامة."
-      ],
-      "answer":  "آسف",
-      "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
-    },
-    {
-      "id": 5,
-      "question": "How do you say 'water'",
-      "options": [
-        "ماء",
-        "طبق",
-        "ماء",
-        "حليب"
-      ],
-      "answer":  "طبق",
-      "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
-    },
-    {
-      "id": 6,
-      "question": "What is the correct translation for 'hospital'",
-      "options": [
-        "ماء",
-        "مستشفى",
-        "أسبرين",
-        "البيت"
-      ],
-      "answer":  "أسبرين",
-      "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
-    }
-  ]);
-  // const [questions, setQuestions] = useState(location?.state);
+  const questions=(useSelector(state => state?.quiz?.quizData));
   const [answers, setAnswers] = useState({});
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
@@ -103,6 +28,7 @@ const Test = () => {
   const [timer, setTimer] = useState(60); 
   const [timerIntervalId, setTimerIntervalId] = useState(null);
   const [status, setStatus] = useState("");
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setTimer((prevTimer) => {
@@ -112,7 +38,6 @@ const Test = () => {
    
     setTimerIntervalId(intervalId);
 
-    
     return () => {
       clearInterval(intervalId);
       if (timer <= 0) {
@@ -120,11 +45,35 @@ const Test = () => {
       }
     };
   }, [timer]);
+ 
 
   const handleAnswerSelect = (questionId, selectedOption) => {
     const updatedAnswers = { ...answers, [questionId]: selectedOption };
     setAnswers(updatedAnswers);
   };
+  
+  async function saveResult(progressData) {
+    try {
+        const token = sessionStorage.getItem('authorization'); 
+        const res = await fetch("http://localhost:3001/progress", {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Authorization': `${token}`, 
+                'Access-Control-Allow-Origin': '*'
+            },
+            body: JSON.stringify(progressData) // Include progress data here
+        });
+
+        const responseData = await res.json();
+        if (responseData.status==!200) {
+          console.log("error in fetching list try again after some time");
+        }
+    } catch (err) {
+        console.log(err);
+    }
+}
 
   const handleSubmit = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -139,19 +88,16 @@ const Test = () => {
       const percentage = (quizScore / questions.length) * 100;
       // Determine the status based on the percentage
       const newStatus = percentage >= 50 ? "Passed" : "Failed";
+      const progressData = {
+        progress: {
+            progressMade: "20"
+        }
+    };    
       setStatus(newStatus);
-
       setShowResult(true);
+      saveResult(progressData);
       setLoading(false);
     }, 5000);
-
-     // axios.post('/progress', {progress:{progressMade:50,score:score}})
-    // .then(response => {
-    //   
-    // })
-    // .catch(error => {
-    //  console.log('error is updating score and progress',error)
-    // })
   };
 
   const calculateScore = (userAnswers) => {
@@ -165,7 +111,6 @@ const Test = () => {
     return score;
   };
 
-  // Reset states and reload the page
   const restartQuiz = () => {
     setAnswers({});
     setScore(0);
@@ -174,7 +119,6 @@ const Test = () => {
     setTimer(60); 
     navigate("/test"); 
   };
-
   return (
     <section>
       <NewNavbar />

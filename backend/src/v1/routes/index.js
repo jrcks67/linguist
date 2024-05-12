@@ -7,6 +7,7 @@ router.post("/login",homeController.loginUser);
 router.post("/confirm",homeController.confirmUser);
 router.get("/data",homeController.getAllData);
 router.post("/progress",homeController.updateProgress);
+router.get("/homedata",homeController.homeData);
 
 
 

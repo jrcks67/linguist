@@ -1,7 +1,9 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Card = ({ coursedetails}) => {
+  const courseContentData = useSelector(state => state?.courseContent?.courseContentData);
   return (
     <div className='flex flex-col items-center space-evenly justify-between bg-brightBackground border-2 border-yellowColor md:border md:w-full p-12 cursor-pointer:rounded-lg hover:shadow-[rgba(0,_0,_0,_0.23)_0px_3px_8px] transition-all bg-fixed rounded-xl'
          style={{ width: '400px', height: '400px'}}> 
@@ -19,7 +21,7 @@ const Card = ({ coursedetails}) => {
       <Link
         to={{
           pathname:`/learn/${coursedetails?.id}`,
-          state:{ coursedetails: coursedetails }
+          state:{ coursedetails: courseContentData }
         }}
       >
           Read More

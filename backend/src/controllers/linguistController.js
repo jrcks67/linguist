@@ -47,11 +47,15 @@ const updateProgress = async (req, res) => {
     }
 };
 
+const homeData= (req,res)=>{
+     linguistServices.homeData(req,res);
+}
 
 module.exports = {
     createUser,
     confirmUser,
     loginUser,
     getAllData,
-    updateProgress
+    updateProgress,
+    homeData
 };

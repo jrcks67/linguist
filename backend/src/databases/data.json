@@ -75,7 +75,7 @@
             "options": [
               "ماء",
               "طبق",
-              "ماء",
+              "ما.ء",
               "حليب"
             ],
             "answer":  "طبق",
@@ -103,9 +103,9 @@
       "imgUrl":"https://i.imghippo.com/files/XFiEo1715265893.jpg",
       "content":[
       {"contentId":"c-7SVieC_04","contentTitle":"Welcome and Course Introduction"},
-      {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in Arabic"},
+      {"contentId":"1AT7IMLcA58","contentTitle":"Alphabets in German"},
       {"contentId":"8pfQg26vfaA","contentTitle":"Sentence formation"},
-      {"contentId":"LTwCmA6AjdI","contentTitle":"Reading an=d writing"},
+      {"contentId":"LTwCmA6AjdI","contentTitle":"Reading and writing"},
       {"contentId":"c-7SVieC_04","contentTitle":"Verbs"},
       {"contentId":"1AT7IMLcA58","contentTitle":"Nouns and Pronouns"},
       {"contentId":"8pfQg26vfaA","contentTitle":"Adverbs"},
