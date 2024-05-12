@@ -11,6 +11,7 @@ import SignUp from './Components/Login/SignUp';
 import CoursePage from './Components/CourseContent/CoursePage';
 import Test from './Components/CourseContent/Test';
 import ProtectedRoutes from './Components/Login/ProtectedRoutes';
+import Confirm from './Components/Login/Confirm';
 
 
 
@@ -22,7 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-
+        <Route path="/confirm" element={<Confirm/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/progress" element={<Progress />} />
         <Route path="/learn" element={<Learn />} />
