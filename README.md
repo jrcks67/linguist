@@ -14,5 +14,15 @@
 3. Once server is up , hit "http://localhost:3000" in cors-disbaled browser.
    
 ## 2. Backend
+1.	Clone the repository
+2.	Install dependencies using `npm install`
+3.	Configure environment variables in a `.env` file
+4.	To run the project, first navigate to the src folder using cd backend/src  and execute
+` node index.js `
+
 ## 3. Database
+1.	Download and Instal MongoDB and MongoDB compass in your local system
+2.	Extract your user connection string or copy the localhost connection string 
+3.	 Assign the value to attribute mongodb url in db.js file inside database folder
+   
 Setting up Jenkins pipeline for this project. Will get rebuilt on every push to main branch. 
