@@ -10,7 +10,11 @@
 
 ## Setup the application 
 
-1. Frontend 
-2. Backend
-3. Database
+## 1. Frontend
+1. install npm
+2. run npm start
+3. Once server is up , hit "http://localhost:3000" in cors-disbaled browser.
+   
+## 2. Backend
+## 3. Database
 Setting up Jenkins pipeline for this project. Will get rebuilt on every push to main branch. 
