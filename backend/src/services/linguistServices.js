@@ -4,7 +4,6 @@ const jwt = require("jsonwebtoken");
 const jwtPassword = "123456";
 const nodemailer = require("nodemailer");
 
-
 async function userExists(username) {
     const user = await User.findOne({ username });
     return user !== null;
@@ -31,9 +30,9 @@ const createUser = async (req, res) => {
 
         const newUser = new User({ username, password });
         await newUser.save();
-      //  const confirmationToken = generateConfirmationToken(username);
-      //  console.log(confirmationToken)
-        // await sendConfirmationEmail(email, confirmationToken);
+       const confirmationToken = generateConfirmationToken(username);
+       console.log(confirmationToken)
+        await sendConfirmationEmail(email, confirmationToken);
 
         res.status(201).json({ msg: "User created. Please check your email for confirmation." });
     } catch (err) {
@@ -49,7 +48,7 @@ async function sendConfirmationEmail(email, confirmationToken) {
         secure: true,
         auth: {
             user: 'zero2linguist@gmail.com',
-            pass: 'linguist123'
+            pass: 'tzdpcemrwbtuhdoj'
         }
     });
 
@@ -59,7 +58,7 @@ async function sendConfirmationEmail(email, confirmationToken) {
         subject: 'Confirm your registration',
         html: `
             <p>Thank you for registering with us!</p>
-            <p>Please click <a href="http://localhost:3000/confirm/${confirmationToken}">here</a> to confirm your registration.</p>
+            <p>Please click <a href="http://localhost:3001/confirm?token=${confirmationToken}">here</a> to confirm your registration.</p>
         `
     };
 
@@ -160,7 +159,7 @@ const progress = async (req,res) => {
             res.status(200).json({ msg: "Progress Updated" });
         }
     } catch (err){
-        res.error(err)
+        //res.error(err)
     }
 }
 
